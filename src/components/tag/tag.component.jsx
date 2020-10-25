@@ -1,18 +1,14 @@
 import React from 'react';
 
+import './tag.styles.css';
+
 export const Card = ({ children, title }) => {
   return (
-    <div className="row">
-      <div className="col">
-        <div className="card my-3">
-          <div className="card-header bg-card-cs">
-            <div className="row">
-              <div className="col text-uppercase font-weight-bold">{title}</div>
-            </div>
-          </div>
-          {children}
-        </div>
+    <div>
+      <div className="custom-card">
+        {title}
       </div>
+      {children}
     </div>
   )
 }
